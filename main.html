@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/weather.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <!-- 도시 -->
+        <div class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="city">Gimpo</span> 
+        </div>
+        <!-- / 도시 -->
+    
+    
+
+       <!-- 온도 -->
+        <h1 class="temp">
+            <span id="temp">25</span><span class="small">°</span>
+        </h1>
+        <!-- /온도 -->
+
+        <div class="descript">
+            <p id="descript">It's Sunny day.</p>
+        </div>
+    </div>
+        <div class="detail">
+            <div class="detail-top">
+                <img src="images/back-top(s).png" alt="#">
+            </div>
+            <div class="detail-body">
+                <h1 class="text-center">Weather Today</h1>
+                <p class="feels-like">체감온도<span id="feels-like"></span></p>
+                <div class="today-box">
+                    <ul>
+                        <li><ladel><i class="fa-solid fa-arrow-down"></i>최저</ladel><span id="temp-min"></span>°</li>
+                        <li><ladel><i class="fa-solid fa-arrow-up"></i>최고</ladel><span id="temp-max"></span>°</li>
+                        <li><label><i class="wi wi-humidity"></i>습도</label><span id="humidity"></span>%</li>
+                    </ul>
+                    <ul>
+                        <li><label><i class="wi wi-sunrise"></i>해뜨는시각</label><span id="sunrise"></span></li>
+                        <li><label><i class="wi wi-sunset"></i>해지는시각</label><span id="sunset"></span></li>
+                        <li><label><i class="wi wi-windy"></i>풍속</label><spna id="windy"></spna>km/h</li>
+                    </ul>
+                </div>
+            </div>
+                <!-- 5day -->
+                <div class="five-day">
+                    <!-- loop -->
+                    <div class="three-times">
+                        <div class="five-date">15일(수) 00시</div>
+                        <div class="five-icon">
+                            <img src="images/1x/01d.png" alt="01d">
+                        </div>
+                        <p class="five-temp">25°</p>
+                        <p class="five-descript">Sunny day</p>
+                    </div>
+                    <!-- /loop -->
+                </div>
+        </div>    
+            <div class="searchbox">
+                <div class="form">
+                    <input type="search" name="search" class="search" placeholder="도시검색...">
+                </div>
+            </div>
+            <a href="#" class="btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+        
+</div>
+</body>
+</html>
